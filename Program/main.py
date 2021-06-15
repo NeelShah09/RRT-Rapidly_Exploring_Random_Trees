@@ -2,7 +2,7 @@ import cv2
 from RRT import RRT
 
 if __name__ == "__main__":
-    img = cv2.imread(r'D:\Python Projects\RRT Visualization for Github\housemap2.bmp')
+    img = cv2.imread('housemap.bmp')
     solver = RRT(img, (50, 700), (850, 50), (1080, 777))  # (50, 700), (850, 50)
     solver.run()
     cv2.imshow("img", solver.mmap)
